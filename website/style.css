@@ -1,0 +1,264 @@
+/* 
+clear the default style 
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* 
+set the body properties
+*/
+body{
+    font-family: sans-serif;
+    background-image:url('images/background1.jpg');
+    background-repeat: repeat;
+    width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+/* set the body properties */
+header {
+    background-color: #666;
+    padding: 40px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+/* 
+set the nav properties for home,resume,and contact html,except for portfolio html
+*/
+nav ul {
+    list-style-type: none;
+    background: cadetblue;
+    overflow: hidden;
+}
+nav li{
+    float: left;
+    width: 25%;
+}
+nav a{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav a:hover{
+    background-color: #dfdfdf;
+    color: black;
+}
+/* set the nav properties for portfolio html via flex */
+#flex-container{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: cadetblue;
+}
+#flex-container a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #fff;
+    display: block;
+    padding: 20px;
+}
+#flex-container a:hover{
+    background-color: #dfdfdf;
+    color: #000;
+}
+/*set properties to hyperlink  */
+a{
+    color:blue;
+}
+a:hover{
+    color:greenyellow;
+    text-decoration: none;
+    margin: 0px auto;
+}
+/* set properties to the main tag */
+main{
+    background-color:skyblue;
+    overflow: hidden;
+}
+/* set class properties for the home page,and  */
+.profilepic{
+    width: 500px;
+    float: right;
+    margin: 15px;
+}
+.aspiration{
+    float: left;
+    width: 800px;
+    margin: 60px 10px 10px 10px;
+    border:solid 1px green;
+    padding: 10px;
+    background-color: rgb(174, 216, 226);
+    border-radius: 20px;
+}
+.position{
+    position: relative;
+    right: 15px;
+}
+/* set properties for the resume html */
+.resume{
+    width: 800px;
+    margin: 20px auto;
+    border:solid 1px green;
+    padding: 10px;
+    background-color: rgb(174, 216, 226);
+    border-radius: 20px;
+} 
+/* set properties for all images */
+a img{
+    border-radius: 20px;
+}
+/* set properties for h2,h3,h4 headings */
+h2{
+    font-size: xx-large;
+    color:#ffffff;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+}
+h3{
+    color:black;
+    font-size: x-large;
+    font-weight: normal;
+    padding: 0px;
+    text-align: center;
+}
+h4{
+    font-size: large;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-weight: normal;
+    color: #000000;
+}
+/* set properties for section,p,span,ul,ol,li */
+section{
+    padding: 10px;
+    border-radius: 20px;
+    margin: 5px auto;
+    border: solid 2px green;
+    background-color: rgb(174, 216, 226);
+}
+p{
+    padding-top: 25px;
+    color:black;
+}
+span{
+    font-size: 25px;
+    border-radius: 5px;
+}
+ul,ol,li{
+    list-style-type: none;
+}
+/* set grid properties to the portfolio html */
+.container{
+    display: grid;
+    grid-gap: 10px;
+    width: 1200px;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "interest webdesign"
+    "interest programming"
+    "hobbies travelling"
+    "hobbies badminton"
+    "hobbies ice"
+    "hobbies tennis"
+    "hobbies fish";
+}
+.interest{
+	grid-area: interest;
+}
+.webdesign {
+	grid-area: webdesign;
+}
+.img-left{
+    float: left;
+    border-radius: 360px;
+    border: solid  2px darkgreen;
+    margin: 30px;
+}
+.img-right{
+    float: right;
+    border-radius: 360px;
+    border: solid  2px darkgreen;
+    margin: 30px;
+}
+.programming{
+    grid-area:programming;
+}
+.hobbies {
+	grid-area: hobbies;
+}
+.travelling {
+	grid-area: travelling;
+}
+.badminton{
+    grid-area: badminton;
+}
+.ice{
+    grid-area: ice;
+}
+.tennis{
+    grid-area: tennis;
+}
+.fish{
+    grid-area: fish;
+}
+/* set properties for the contact html */
+label{
+    display: block;
+    margin-top: 10px;
+}
+button[type="submit"]{
+    display: block;
+    margin: 10px auto;
+    text-transform: uppercase;
+    background-color:lightcoral;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+button[type="submit"]:hover{
+    background-color:seagreen;
+    color: #000000;
+}
+form{
+    width:400px;
+    border: solid 1px #000;
+    background-color: rgb(166, 216, 216);
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+textarea{
+    width:80%;
+    height: 200px;
+    margin-top: 5px;
+}
+input{
+    height: 20px;
+    width: 200px;
+}
+form span{
+    display: block;
+    color: red;
+    font-size: smaller;
+}
+input,textarea,button{
+    border-radius: 5px;
+}
+/* set properties for the footer */
+footer {
+    background-color: #777;
+    padding: 5px;
+    text-align: left;
+    font-size: small;
+    color: white;
+}
+  

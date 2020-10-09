@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Contact</title>
+    <meta charset = "utf-8">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>HEZHANG CHENG</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Contact</h2>
+    <form action="thankyou.html" name="contact" onsubmit = "return checkName()">
+        <h3>Please Input Your Data</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <span id = "nameMessage"></span>
+
+        <label for="emailaddress">Email Address:</label>
+        <input type="text" id="emailaddress" name="emailaddress">
+        <span id = "emailMessage"></span>
+
+        <label for="subject">Please Input Subject:</label>
+        <input type="text" id="subject" name="subject">
+        <span id = "subjectMessage"></span>
+
+        <label for="message">Leave Your Message:</label>
+        <textarea id="message" placeholder="Write your message..." rows="16" cols="50" name="message"></textarea>
+        <span id = "messageMessage"></span>
+
+        <button type ="submit">Submit Data</button>
+    </form>
+    </main>
+    <footer>
+        <p>Posted by: Hezhang Cheng</p>
+        <p>Contact information: <a href="mailto:chenghezhang0908@gmail.com">
+        chenghezhang0908@gmail.com</a>.</p>
+        <p>&copy; Binary Zen.<a href="https://www.w3.org/standards/webdesign/accessibility" target="_blank">Accessibility</a></p>
+    </footer>
+</body>
+</html>
